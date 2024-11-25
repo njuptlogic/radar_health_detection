@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    background-color: #143045;
+    line-height: 1.15;
+}
+header {
+    position: relative;
+    height: 1rem;
+    background-color:#0e202e;
+    background-size: 100% 100%;
+}
+header h1 {
+    font-size: 0.475rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1rem;
+}
+header .showTime {
+    position: absolute;
+    right: 0.375rem;
+    top: 0;
+    line-height: 0.9375rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.25rem;
+}
+.mainbox {
+    display: flex;
+    min-width: 1024px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0.125rem 0.125rem 0;
+}
+.mainbox .column1 {
+    flex: 9;
+    margin-top: 50px;
+}
+.mainbox .column2 {
+    flex: 26;
+    margin: 0.125rem 0.1875rem;
+    display: flex;
+} 
+.mainbox .panel{
+    background-color: #09141d;
+}
+.mainbox .panel h2 {
+    height: 0.6rem;
+    color: #fff;
+    line-height: 0.6rem;
+    text-align: center;
+    font-size: 0.25rem;
+    font-weight: 400;
+}
+.mainbox .panel .chart {
+    height: 3rem;
+    margin: .5rem 0.1875rem;
+}
+/* 第二栏的主标题 */
+.column2 h2{
+    height: 0.3rem;
+    color: #fff;
+    line-height: 0.3rem;
+    text-align: center;
+    font-size: .3125rem;
+    font-weight: 400;
+}
+/* .mainbox .column2 .column01 {
+    flex: 1;
+    background-color: rgb(48, 27, 153);
+}
+.mainbox .column2 .column02 {
+    flex: 1;
+    background-color: rgb(48, 27, 153);
+    
+}  */
+.mainbox .column2 td {
+    height:3.5rem;
+    width:3.5rem;
+    
+}
+.mainbox .column2 h3{
+    bottom: 0%;
+    height: 0.3rem;
+    color: #fff;
+    line-height: 0.3rem;
+    text-align: center;
+    font-size: .1875rem;
+    font-weight: 400;
+}
+.mainbox .column2 .breathchart{
+    height:1.5rem;
+    width:3.5rem;
+}
+.mainbox .column2 .heartchart{
+    height:1.5rem;
+    width:3.5rem;
+}

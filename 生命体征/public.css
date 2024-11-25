@@ -1,0 +1,64 @@
+strong{
+    color:rgb(10, 76, 255);
+    font-size:20px;
+}
+.buttom-nav{
+    width:150px;
+    height:30px;
+    /*盒子的内容*/
+    background-color: rgb(91, 175, 141);
+    position: relative;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    /* 内边距*/ 
+    margin-left:100px;
+    margin-top:50px;
+    /* 外边距*/
+    border:3px solid rgb(53, 231, 193)
+    /* 边框 */
+
+
+}
+.container{
+    float:left
+}
+.echarts-container-primitive{
+    width:1000px;
+    height:200px;
+    background-color: grey;
+    /* 盒子的内容 */
+    float:right;
+    position: relitive;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    /* 内边距 */
+    margin-right:100px;
+    margin-top:25px;
+    margin-bottom:25px;
+    /* 外边距 */
+}
+.echarts-container-primitive.panel{
+    width:"800px";
+    height:"180px";
+    background-color:blue
+}
+.echarts-container-refined{
+    width:1000px;
+    height:200px;
+    background-color:grey;
+    /* 盒子的内容 */
+    float:right;
+    position: relitive;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    /* 内边距 */
+    margin-right:100px;
+    margin-top:25px;
+    /* 外边距 */
+}

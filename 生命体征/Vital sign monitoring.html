@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生命体征检测</title>
+    <script src="echarts-5.4.3/package/dist/echarts.js"></script>
+    <link rel="stylesheet" href="type.css ">
+</head>
+<body>
+    <!-- 头部的盒子 -->
+    <header>
+        <h1>生命体征监测</h1>
+        <div class="showTime"></div>
+        <script>
+            var t = null;
+            t = setTimeout(time, 1000);//開始运行
+            function time() {
+                clearTimeout(t);//清除定时器
+                dt = new Date();
+                var y = dt.getFullYear();
+                var mt = dt.getMonth() + 1;
+                var day = dt.getDate();
+                var h = dt.getHours();//获取时
+                var m = dt.getMinutes();//获取分
+                var s = dt.getSeconds();//获取秒
+                document.querySelector(".showTime").innerHTML = '当前时间：' + y + "年" + mt + "月" + day + "-" + h + "时" + m + "分" + s + "秒";
+                t = setTimeout(time, 1000); //设定定时器，循环运行     
+            }
+        </script>
+    </header>
+    <!-- 界面的主体 9:26分两栏 -->
+    <section class="mainbox">
+        <!-- 界面左侧一栏 -->
+        <div class="column1">
+            <!-- 设备使用状况的盒子 -->
+            <div class="panel water">
+                <h2>设备使用状况</h2>
+                <div class="chart"></div>
+            </div>
+            <!-- 年龄分布图 -->
+            <div class="panel bar1">
+                <h2>年龄分布图</h2>
+                <div class="chart"></div>
+            </div>
+            <!-- 性别比例 -->
+            <div class="panel bar2">
+                <h2>性别比例</h2>
+                <div class="chart"></div>
+            </div>
+        </div> 
+        <!-- 界面右侧一栏 -->
+        <div class="column2">
+            <div>
+                <header style="background-color: #143045;text-align: center;
+                height: .5rem;">
+                    <h2>个人心跳呼吸情况</h2>
+                </header>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="panel line1">
+                                <h3>姓名</h3>
+                                <div class="breathchart"></div>
+                                <div class="heartchart"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="panel line2">
+                                <h3>姓名</h3>
+                                <div class="breathchart"></div>
+                                <div class="heartchart"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="panel line3">
+                                <h3>姓名</h3>
+                                <div class="breathchart"></div>
+                                <div class="heartchart"></div>
+                            </div>
+                        </td> 
+                        <td>
+                            <div class="panel line4">
+                                <h3>姓名</h3>
+                                <div class="breathchart"></div>
+                                <div class="heartchart"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="panel line5">
+                                <h3>姓名</h3>
+                                <div class="breathchart"></div>
+                                <div class="heartchart"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="panel line6">
+                                <h3>姓名</h3>
+                                <div class="breathchart"></div>
+                                <div class="heartchart"></div>
+                            </div>
+                        </td>
+                        <td>xxxx    </td>
+                        <td>xxxx    </td>
+                        <td>xxxx    </td>
+                        <td>xxxx    </td>
+                    </tr> 
+                    <tr>
+                        <td><div class="panel line11">
+                            <h3>姓名</h3>
+                            <div class="breathchart"></div>
+                            <div class="heartchart"></div>
+                        </div></td>
+                        <td>xxxx    </td>
+                        <td>xxxx    </td>
+                        <td>xxxx    </td>
+                        <td>xxxx    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="panel line16">
+                            <h3>姓名</h3>
+                            <div class="breathchart"></div>
+                            <div class="heartchart"></div>
+                        </td>
+                        <td>xxxx    </td>
+                        <td>xxxx    </td>
+                        <td>xxxx    </td>
+                        <td>xxxx    </td>
+                    </tr>
+                </table>
+            </div>
+    </section>
+
+    <script src="echarts学习/js/flexible.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
